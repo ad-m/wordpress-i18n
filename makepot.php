@@ -603,7 +603,8 @@ class MakePOT {
 		return $this->xgettext( 'wporg', $dir, $output, array(), array(), array(
 			'plugins/wporg-bbp-.*',
 			'plugins/support-forums/.*',
-			'themes/pub/wporg-forums/.*'
+			'themes/pub/wporg-forums/.*',
+			'themes/pub/wporg-support/.*',
 		) );
 	}
 
