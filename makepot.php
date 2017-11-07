@@ -629,6 +629,14 @@ class MakePOT {
 			'themes/rosetta/.*\.php',
 		) );
 	}
+
+	public function wordpress_org( $dir, $output ) {
+		$output = is_null( $output ) ? 'wporg.pot' : $output;
+		return $this->xgettext( 'wporg', $dir, $output, array(), array(), array(
+			'themes/pub/wporg/.*',
+			'themes/pub/wporg-main/.*',
+		) );
+	}
 }
 
 // run the CLI only if the file
